@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Run the ekf for map to odom config -->
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization_local">
+        <rosparam command="load" file="$(find localization_stack)/config/ekf_localization_local.yaml" />
+        <remap from="/odometry/filtered" to="/odometry/filtered" />
+    </node>
+</launch>
