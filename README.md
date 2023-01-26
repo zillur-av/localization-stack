@@ -1,5 +1,5 @@
 # localization-stack
-This ROS Package is for robot localization. When we have more than one localizatin sensor in our robot, we can fuse them to get a better odometry data. For sensor fusion, we use extended kalman filter. 
+This ROS Package is for robot localization. When we have more than one localizatin sensor in our robot, we can fuse them to get a better odometry data. For sensor fusion, we use extended kalman filter. To learn in-depth about this package, please read my article [how to use robot_localizaiton package](https://zillur-rahman.medium.com/how-to-use-the-ros-robot-localization-package-534fe04014d3).
 To use this package, you need any two of the following ROS messages:
 ``` 1.nav_msgs/Odometry  2.geometry_msgs/TwistWithCovarianceStamped 3.sensor_msgs/IMU 4.geometry_msgs/PoseWithCovarianceStamped ```
 
