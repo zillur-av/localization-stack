@@ -36,3 +36,7 @@ This will start the ```robot_localization``` package and you will see two odomet
 # Results
 ![](compare_odoms.png)
 To understand whether our sensor fusion method works or not, move the robot. The ground/floor where the robot is moving is not perfect and as a result, you will see sometimes though the wheels are rotating, the robot is not moving. That will make a difference between two odom messages. Move the robot around and come back to the initial position. You will see the fused odom(the robot itself in rviz) gets back to initial position while the non filtered one does not.
+
+# Acknowledgement
+* http://docs.ros.org/en/noetic/api/robot_localization/html/index.html
+* https://www.youtube.com/watch?v=QZ5q59H2qaI
