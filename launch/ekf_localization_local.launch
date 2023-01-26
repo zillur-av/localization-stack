@@ -5,4 +5,5 @@
         <rosparam command="load" file="$(find localization-stack)/config/ekf_localization_local.yaml" />
         <remap from="/odometry/filtered" to="/odometry/filtered" />
     </node>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find localization-stack)/config/husky.rviz" />
 </launch>
