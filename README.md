@@ -1,6 +1,7 @@
 # localization-stack
 This ROS Package is for robot localization. When we have more than one localizatin sensor in our robot, we can fuse them to get a better odometry data. For sensor fusion, we use extended kalman filter. To learn in-depth about this package, please read my article [how to use robot_localizaiton package](https://zillur-rahman.medium.com/how-to-use-the-ros-robot-localization-package-534fe04014d3).
 To use this package, you need any two of the following ROS messages:
+
 ``` 1.nav_msgs/Odometry  2.geometry_msgs/TwistWithCovarianceStamped 3.sensor_msgs/IMU 4.geometry_msgs/PoseWithCovarianceStamped ```
 
 We can fuse any two messages and will get a better odometry message as output.
@@ -11,11 +12,12 @@ First, install the package using ```sudo apt install ros-$ROS_DISTRO-robot-local
 
 To install the Husky robot, run the following commands.
 
-```sudo apt-get install ros-$RIS_DISTRO-husky-simulator```
+```sudo apt install ros-$ROS_DISTRO-husky-simulator```
 
 Add the following line in your bashrc file.
 
 ```export HUSKY_GAZEBO_DESCRIPTION=$(rospack find husky_gazebo)/urdf/description.gazebo.xacro```
+
 Connect a Logitech Gamepad F710 to your computer. We will use the joystick to control the robot. Then run the following commands too:
 
 ``` 
